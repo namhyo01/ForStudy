@@ -12,7 +12,7 @@ int sushi[30000 + 3000 + 3000]; // 초밥의 정보를 담음
 int cur_cnt[3000 + 300 + 30 + 3]; // k개 안에 같은 종류의 초밥이 몇개인지 카운트
 int cur_ans;
 
-int main()
+/*int main()
 {
 	scanf("%d %d %d %d", &N, &D, &K, &C);
 	for (int n = 0; n < N; n++)
@@ -37,6 +37,5 @@ int main()
 	}
 
 	cout << cur_ans << endl;
-	system("pause");
 	return 0;
-}
+}*/

@@ -19,7 +19,7 @@ int hasWord(int x, int y, int wordIndex);
 int main()
 {
 	int C;
-
+	int num = 0;
 	cin >> C;
 	for (int i = 0; i < C; i++) {
 		for (int j = 0; j < 5; j++)
@@ -50,10 +50,10 @@ int main()
 				cout << word << " YES" << endl;
 			else
 				cout << word << " NO" << endl;
+
 		}
 	}
 
-	system("pause");
 	return 0;
 
 }
@@ -75,6 +75,6 @@ int hasWord(int x, int y, int wordIndex) {
 	if (wordIndex == word.size())
 		return ret = 1;
 
-	return ret = (hasWord(x - 1, y - 1, wordIndex) || hasWord(x - 1, y, wordIndex) || hasWord(x - 1, y + 1, wordIndex) || hasWord(x, y - 1, wordIndex) || hasWord(x, y, wordIndex) || hasWord(x, y + 1, wordIndex) || hasWord(x + 1, y - 1, wordIndex) || hasWord(x + 1, y, wordIndex) || hasWord(x + 1, y + 1, wordIndex));
+	return ret = (hasWord(x - 1, y - 1, wordIndex) || hasWord(x - 1, y, wordIndex) || hasWord(x - 1, y + 1, wordIndex) || hasWord(x, y - 1, wordIndex) || hasWord(x, y + 1, wordIndex) || hasWord(x + 1, y - 1, wordIndex) || hasWord(x + 1, y, wordIndex) || hasWord(x + 1, y + 1, wordIndex));
 
 }

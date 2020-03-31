@@ -16,12 +16,12 @@ string word;
 
 int hasWord(int x, int y, int wordIndex);
 
-int main()
+/*int main()
 {
 	int C;
 	int num = 0;
 	cin >> C;
-	for (int i = 0; i < C; i++) {
+	for (int k = 0; k < C; k++) {
 		for (int j = 0; j < 5; j++)
 			cin >> board[j][0] >> board[j][1] >> board[j][2] >> board[j][3] >> board[j][4]; // 보드 입력
 
@@ -56,7 +56,7 @@ int main()
 
 	return 0;
 
-}
+}*/
 int hasWord(int x, int y, int wordIndex) {
 	if ((x < 0) || (x > 4) || (y > 4) || (y < 0))
 		return 0;

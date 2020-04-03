@@ -15,7 +15,7 @@ int ret = 0;
 
 void countPairings();
 
-int main() {
+/*int main() {
 
 	int C;
 	cin >> C;
@@ -34,7 +34,7 @@ int main() {
 		cout << ret << endl;
 	}
 	system("pause");
-}
+}*/
 
 void countPairings() {
 	int first=-1;

@@ -24,11 +24,11 @@ bool set(vector<vector<int> > & board, int y, int x, int type, int delta) {
 	for (int i = 0; i < 3; i++) {
 		const int ny = y + coverType[type][i][0];
 		const int nx = x + coverType[type][i][1];
-		if (ny < 0 || ny >= board.size() || nx < 0 || nx >= board.size()) {
-			return ok = false;
+		if (ny < 0 || ny >= board.size() || nx < 0 || nx >= board[0].size()) {
+			ok = false;
 		}
 		else if ((board[ny][nx] += delta) > 1) { // 중복 적용
-			return ok = false;
+			ok = false;
 		}
 	}
 	return ok;
@@ -51,16 +51,18 @@ int cover(vector<vector<int> >& board)
 		if (y != -1) break;
 	}
 	//모든 칸을 채웠으면 1을 반환
+	//cout << y << x << endl;
 	if (y == -1) return 1;
 	int ret = 0;
 	for (int type = 0; type < 4; type++) {
 		if (set(board, y, x, type, 1)) {
 			ret += cover(board);
-
 		}
+		set(board, y, x, type, -1); // 해제
+		
 	}
 
-
+	return ret;
 }
 int H, W;
 int main() {
@@ -68,12 +70,22 @@ int main() {
 	cin >> C;
 	for (int i = 0; i < C; i++) {
 		cin >> H >> W;
+		vector<vector<int> > board(H, vector<int>(W,0));
 		for (int j = 0; j < H; j++) {
 			for (int k = 0; k < W; k++) {
-
+				char kan;
+				cin >> kan;
+				if (kan == '#') {
+					board[j][k] = 1;
+				}
+				else {
+					board[j][k] = 0;
+				}
 			}
 		}
-	}
+		cout<<cover(board)<<endl;
 
+	}
+	system("pause");
 	return 0;
 }

@@ -1,6 +1,6 @@
 // 백준 회전초밥 문제
 
-#include <iostream>
+/*#include <iostream>
 #include <algorithm>
 #pragma warning(disable:4996)
 using namespace std;

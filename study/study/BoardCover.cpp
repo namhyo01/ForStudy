@@ -65,12 +65,15 @@ int cover(vector<vector<int> >& board)
 	return ret;
 }
 int H, W;
-int main() {
+int cnt = 0; // Èò°Å ¸î°³ÀÎÁö ¼À
+
+/*int main() {
 	int C;
 	cin >> C;
 	for (int i = 0; i < C; i++) {
 		cin >> H >> W;
 		vector<vector<int> > board(H, vector<int>(W,0));
+		cnt = 0;
 		for (int j = 0; j < H; j++) {
 			for (int k = 0; k < W; k++) {
 				char kan;
@@ -80,12 +83,16 @@ int main() {
 				}
 				else {
 					board[j][k] = 0;
+					cnt++;
 				}
 			}
 		}
-		cout<<cover(board)<<endl;
+		if (cnt % 3 != 0)
+			cout << 0 << endl;
+		else
+			cout<<cover(board)<<endl;
 
 	}
 	system("pause");
 	return 0;
-}
+}*/

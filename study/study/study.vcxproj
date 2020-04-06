@@ -112,6 +112,7 @@
   <ItemGroup>
     <ClCompile Include="BoardCover.cpp" />
     <ClCompile Include="BOGGLE.cpp" />
+    <ClCompile Include="CLOCKSYNC.cpp" />
     <ClCompile Include="PICNINC.cpp" />
     <ClCompile Include="study.cpp" />
     <ClCompile Include="TSP.cpp" />

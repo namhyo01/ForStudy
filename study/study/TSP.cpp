@@ -1,5 +1,5 @@
 // 여행하는 외판원 문제
-
+/*
 #include <iostream>
 #include <algorithm>
 #include <stdlib.h>
@@ -50,7 +50,7 @@ int main() {
 		//cout << shortestPath(path, visit, 0) << endl;
 		double answer = INF;
 		for (int i = 0; i < N; i++) {
-			vector<int> path(1, i);
+			vector<int> path(1, i); // 시작 위치
 			vector<bool> visit(N, false);
 			visit[i] = true;
 			answer = min(answer, shortestPath(path, visit, 0));
@@ -62,4 +62,4 @@ int main() {
 
 	system("pause");
 	return 0;
-}
+}*/

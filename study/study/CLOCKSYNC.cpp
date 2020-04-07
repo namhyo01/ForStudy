@@ -7,7 +7,7 @@
 #include <vector>
 #pragma warning(disable:4996)
 using namespace std;
-
+/*
 const int SWITCH = 10;
 const int INF = 9999999;
 const int CLOCKS = 16;
@@ -80,4 +80,4 @@ int main() {
 
 	system("pause");
 	return 0;
-}
+}*/

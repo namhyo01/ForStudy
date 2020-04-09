@@ -31,3 +31,32 @@ void decompress(string::iterator &it, int y, int x, int size) {
 		decompress(it, y + half, x + half, half);
 	}
 }
+int cdnt = 0;
+string reverse(string::iterator &it) {
+	char head = *(it++);
+	if (head == 'w' || head == 'b') {
+		return string(1, head);
+	}
+	cdnt++;
+	string upperleft = reverse(it);
+	string upperright = reverse(it);
+	string lowerleft = reverse(it);
+	string lowerright = reverse(it);
+	//각각 위와 아래의 위치를 바꾼다
+	cout << upperleft <<"Dd"<< cdnt<<endl;
+	return string("x") + lowerleft + lowerright + upperleft + upperright;
+}
+
+int main()
+{
+	int C;
+	cin >> C;
+	for (int i = 0; i < C; i++) {
+		string tree;
+		cin >> tree;
+		string::iterator it = tree.begin();
+		cout<< reverse(it)<<endl;
+	}
+	system("pause");
+	return 0;
+}

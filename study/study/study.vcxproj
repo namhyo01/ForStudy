@@ -113,6 +113,7 @@
     <ClCompile Include="BoardCover.cpp" />
     <ClCompile Include="BOGGLE.cpp" />
     <ClCompile Include="CLOCKSYNC.cpp" />
+    <ClCompile Include="FENCE.cpp" />
     <ClCompile Include="QUADTREE.cpp" />
     <ClCompile Include="PICNINC.cpp" />
     <ClCompile Include="study.cpp" />

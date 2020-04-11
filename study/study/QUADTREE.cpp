@@ -1,5 +1,5 @@
 //쿼드 트리 뒤집기 문제
-#include <iostream>
+/*#include <iostream>
 #include <algorithm>
 #include <stdlib.h>
 #include <string>
@@ -59,4 +59,4 @@ int main()
 	}
 	system("pause");
 	return 0;
-}
+}*/

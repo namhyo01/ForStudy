@@ -7,11 +7,11 @@
 #include <vector>
 #pragma warning(disable:4996)
 using namespace std;
-/*
-const int SWITCH = 10;
-const int INF = 9999999;
-const int CLOCKS = 16;
 
+const int SWITCH = 10;
+const int INF = 9999;
+const int CLOCKS = 16;
+bool twelve = false;
 const char linked[SWITCH][CLOCKS + 1] = {
 	//x면 연결 .이면 비연결
 	"xxx.............",
@@ -39,7 +39,7 @@ void push(vector <int> & clocks, int swtch) {
 	for (int i = 0; i < 16; i++) {
 		if (linked[swtch][i] == 'x') {
 			clocks[i] += 3;
-			if (clocks[i] == 15) clocks[i] = 3;
+			if (clocks[i] > 12) clocks[i] -= 12;
 
 		}
 	}
@@ -48,7 +48,13 @@ void push(vector <int> & clocks, int swtch) {
 
 int solve(vector<int> & clocks, int swtch) {
 	if (swtch == SWITCH) {
-		return areAligned(clocks) ? 0 : INF;
+		if (areAligned(clocks)) {
+			twelve = true;
+			return 0;
+		}
+
+		return INF;
+		//return areAligned(clocks) ? 0 : INF;
 	} 
 	int ret = INF;
 	for (int i = 0; i < 4; i++) {
@@ -66,12 +72,13 @@ int main() {
 	cin >> C;
 	for (int i = 0; i < C; i++) {
 		vector <int> clocks(16);
+		twelve = false;
 		for (int j = 0; j < 16; j++) {
 			cin >> clocks[j];
 		}
 		int answer = solve(clocks, 0);
-		if (answer == INF) {
-			cout << '-1' << endl;
+		if (!twelve) {
+			cout << -1 << endl;
 		}
 		else {
 			cout << answer << endl;
@@ -80,4 +87,4 @@ int main() {
 
 	system("pause");
 	return 0;
-}*/
+}

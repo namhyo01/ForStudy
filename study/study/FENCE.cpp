@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <algorithm>
 #include <stdlib.h>
 #include <string>
@@ -52,4 +52,4 @@ int main() {
 
 	system("pause");
 	return 0;
-}
+}*/

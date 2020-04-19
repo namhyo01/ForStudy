@@ -6,7 +6,7 @@
 #include <string.h>
 #pragma warning(disable:4996)
 using namespace std;
-int n, m;
+/*int n, m;
 
 bool areFriends[10][10]; // 이 변수는 누구랑 누구가 친구인지 나타낸다.
 bool hasFriend[10]; // 이 변수는 이 번호의 학생이 짝이 정해졌는지를 나타낸다.
@@ -34,7 +34,7 @@ void countPairings();
 		cout << ret << endl;
 	}
 	system("pause");
-}*/
+}
 
 void countPairings() {
 	int first=-1;
@@ -59,4 +59,4 @@ void countPairings() {
 		}
 	}
 	return;
-}
+}*/

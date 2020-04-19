@@ -7,7 +7,7 @@
 #include<math.h>
 #pragma warning(disable:4996)
 using namespace std;
-
+/*
 //곱셈으로서 구할수 있다.
 vector<int> multiply(vector<int> &a, vector<int> &b) {
 	vector<int> c(a.size() + b.size() + 1, 0);
@@ -97,3 +97,4 @@ int main() {
 	system("pause");
 	return 0;
 }
+*/

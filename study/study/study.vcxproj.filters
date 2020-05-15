@@ -42,10 +42,13 @@
     <ClCompile Include="FanMeeting.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="review.cpp">
+    <ClCompile Include="JumpGame.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="JumpGame.cpp">
+    <ClCompile Include="WILDCARD.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="trianglepathcpp.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

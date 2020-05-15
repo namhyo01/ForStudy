@@ -7,7 +7,7 @@
 #include<math.h>
 #pragma warning(disable:4996)
 using namespace std;
-
+/*
 int n, board[100][100];
 int cache[100][100] = { -1, };
 int jump2(int y, int x);
@@ -43,4 +43,4 @@ int jump2(int y, int x) {
 	if (ret != -1) return ret;
 	int jumpSize = board[y][x];
 	return ret = (jump2(y + jumpSize, x) || jump2(y, x + jumpSize));
-}
+}*/

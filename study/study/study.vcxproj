@@ -117,7 +117,8 @@
     <ClCompile Include="FENCE.cpp" />
     <ClCompile Include="QUADTREE.cpp" />
     <ClCompile Include="PICNINC.cpp" />
-    <ClCompile Include="review.cpp" />
+    <ClCompile Include="trianglepathcpp.cpp" />
+    <ClCompile Include="WILDCARD.cpp" />
     <ClCompile Include="JumpGame.cpp" />
     <ClCompile Include="study.cpp" />
     <ClCompile Include="TSP.cpp" />

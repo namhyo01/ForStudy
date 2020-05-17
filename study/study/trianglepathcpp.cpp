@@ -32,7 +32,7 @@ int main() {
 }
 
 int path(int y, int x) {
-	if (y == n - 1) return trianglepath[y][x];
+	if (y == n - 1) return trianglepath[y][x]; // 끝이 나면은
 
 	int &ret = cache[y][x];
 

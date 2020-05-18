@@ -115,6 +115,7 @@
     <ClCompile Include="CLOCKSYNC.cpp" />
     <ClCompile Include="FanMeeting.cpp" />
     <ClCompile Include="FENCE.cpp" />
+    <ClCompile Include="LIS.cpp" />
     <ClCompile Include="QUADTREE.cpp" />
     <ClCompile Include="PICNINC.cpp" />
     <ClCompile Include="trianglepathcpp.cpp" />

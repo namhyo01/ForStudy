@@ -6,7 +6,7 @@
 #include <vector>
 #pragma warning(disable:4996)
 using namespace std;
-int trianglepath[100][100];
+/*int trianglepath[100][100];
 int cache[101][101];
 
 int path(int y, int x);
@@ -39,4 +39,4 @@ int path(int y, int x) {
 	if (ret != -1) return ret;
 	return ret = max(path(y + 1, x), path(y + 1, x + 1)) + trianglepath[y][x];
 
-}
+}*/

@@ -18,7 +18,11 @@ int main() {
 	int C;
 	cin >> C;
 	for (int l = 0; l < C; l++) {
-
+		memset(S, 0, sizeof(S));
+		cin >> n;
+		for (int i = 0; i < n; i++) {
+			cin >> S[n];
+		}
 	}
 	return 0;
 }

@@ -19,10 +19,14 @@ int main() {
 	cin >> C;
 	for (int l = 0; l < C; l++) {
 		memset(S, 0, sizeof(S));
+		memset(cache, -1, sizeof(cache));
 		cin >> n;
 		for (int i = 0; i < n; i++) {
 			cin >> S[n];
 		}
 	}
 	return 0;
+}
+int list(int n) {
+
 }

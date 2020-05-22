@@ -10,9 +10,9 @@
 using namespace std;
 
 int n;
-int cache[101][101],S[100];
+int cache[101],S[100];
 
-int list(int n);
+int list(int start);
 
 int main() {
 	int C;
@@ -27,6 +27,7 @@ int main() {
 	}
 	return 0;
 }
-int list(int n) {
-
+int list(int start) {
+	int &ret = cache[start];
+	if (ret != -1) return ret;
 }

@@ -8,7 +8,7 @@
 #include <vector>
 #pragma warning(disable:4996)
 using namespace std;
-/*
+
 int n;
 int cache[101],S[100];
 
@@ -30,4 +30,4 @@ int main() {
 int list(int start) {
 	int &ret = cache[start];
 	if (ret != -1) return ret;
-}*/
+}

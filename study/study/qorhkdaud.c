@@ -3,7 +3,7 @@
 #include <string.h>
 
 #pragma warning(disable:4996)
-
+/*
 void main() {
 	char str[101];
 	char seps[] = " \t";
@@ -46,3 +46,4 @@ void main() {
 
 	system("pause");
 }
+*/

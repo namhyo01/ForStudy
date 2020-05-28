@@ -24,10 +24,12 @@ int main() {
 		for (int i = 0; i < n; i++) {
 			cin >> S[n];
 		}
+		list(n);
 	}
 	return 0;
 }
 int list(int start) {
 	int &ret = cache[start];
 	if (ret != -1) return ret;
+
 }

@@ -24,7 +24,8 @@ int main() {
 		for (int i = 0; i < n; i++) {
 			cin >> S[n];
 		}
-		list(n);
+		list(n); \
+			cout << list(n);
 	}
 	return 0;
 }

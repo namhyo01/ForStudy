@@ -27,12 +27,12 @@ int main() {
 		list(n); \
 			cout << list(n);
 	}
+	system("pause");
 	return 0;
 }
 // listÀÛ¼º dp
 int list(int start) {
 	int &ret = cache[start];
 	if (ret != -1) return ret;
-	.....
 	return ET;
 }

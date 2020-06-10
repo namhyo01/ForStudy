@@ -34,5 +34,5 @@ int main() {
 int list(int start) {
 	int &ret = cache[start];
 	if (ret != -1) return ret;
-	return ET;
+	return ret;
 }

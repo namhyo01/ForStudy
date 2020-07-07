@@ -1,39 +1,47 @@
-//최대 증가 부분 수열
-//알고스팟
+/******************************************************************************
+
+Online C++ Compiler.
+Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
 #include <iostream>
-#include <algorithm>
-#include <stdlib.h>
-#include <string>
-#include <string.h>
 #include <vector>
-#pragma warning(disable:4996)
+#include <string.h>
+
 using namespace std;
 
+int cache[501], S[501];
 int n;
-int cache[101],S[100];
 
-int list(int start);
-
-int main() {
-	int C;
-	cin >> C;
-	for (int l = 0; l < C; l++) {
-		memset(S, 0, sizeof(S));
-		memset(cache, -1, sizeof(cache));
-		cin >> n;
-		for (int i = 0; i < n; i++) {
-			cin >> S[n];
-		}c
-		list(n); \
-			cout << list(n);
-	}
-	system("pause");
-	return 0;
-}
-// list작성 dp
-int list(int start) {
-	int &ret = cache[start];
+int lis(int start) {
+	int &ret = cache[start + 1];
 	if (ret != -1) return ret;
-	
+	ret = 1;
+	for (int next = start + 1; next<n; next++) {
+		if (start == -1 || S[start] < S[next]) {
+			ret = max(ret, lis(next) + 1);
+		}
+	}
 	return ret;
 }
+
+int main()
+{
+	int C;
+	cin >> C;
+	for (int i = 0; i<C; i++) {
+		cin >> n;
+		memset(cache, -1, sizeof(cache));
+		for (int j = 0; j<n; j++) {
+			cin >> S[j];
+		}
+
+		cout << lis(-1) - 1 << endl;
+	}
+
+	return 0;
+}
+
+

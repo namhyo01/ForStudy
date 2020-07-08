@@ -57,5 +57,8 @@
     <ClCompile Include="qorhkdaud.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="JLIS.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -10,7 +10,7 @@ Code, Compile, Run and Debug online from anywhere in world.
 #include <iostream>
 #include <string.h>
 #include <limits>
-
+#include<algorithm>
 using namespace std;
 int n, m;
 int cache[101][101];

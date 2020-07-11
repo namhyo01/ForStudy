@@ -38,7 +38,7 @@ int lis(int a_start, int b_start) {
 	return ret;
 }
 
-int main()
+/*int main()
 {
 	int C;
 	cin >> C;
@@ -54,5 +54,5 @@ int main()
 
 	return 0;
 }
-
+*/
 

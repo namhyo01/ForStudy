@@ -9,7 +9,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 #include <iostream>
 #include <vector>
 #include <string.h>
-
+#include<algorithm>
 using namespace std;
 
 int cache[501], S[501];
@@ -27,7 +27,7 @@ int lis(int start) {
 	return ret;
 }
 
-int main()
+/*int main()
 {
 	int C;
 	cin >> C;
@@ -45,3 +45,4 @@ int main()
 }
 
 
+*/

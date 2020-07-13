@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <algorithm>
 #include <stdlib.h>
 #include <string>
@@ -33,7 +33,7 @@ int solve(int left, int right) {
 	}
 	return ret;
 }
-
+/*
 int main() {
 	int C;
 	cin >> C;

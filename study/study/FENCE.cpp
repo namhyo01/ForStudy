@@ -6,7 +6,7 @@
 #include <vector>
 #pragma warning(disable:4996)
 using namespace std;
-// 분할정복
+// 분할정복(얖)
 vector<int> h;
 // 왼쪽으로뻗어가고
 // 오른쪽으로 뻗어가고

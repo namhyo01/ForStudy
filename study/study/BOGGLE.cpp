@@ -12,7 +12,7 @@ char board[5][5]; //board 판
 int cache[5][5][10]; // 결과값을 저장. memset으로 -1로 초기화 1은 성공, 0은 실패
 string word;
 
-//
+//알고스팟
 
 int hasWord(int x, int y, int wordIndex);
 

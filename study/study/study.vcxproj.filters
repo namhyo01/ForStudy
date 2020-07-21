@@ -63,5 +63,8 @@
     <ClCompile Include="다각형대각선.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="주사위.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

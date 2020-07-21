@@ -126,6 +126,7 @@
     <ClCompile Include="study.cpp" />
     <ClCompile Include="TSP.cpp" />
     <ClCompile Include="다각형대각선.cpp" />
+    <ClCompile Include="주사위.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

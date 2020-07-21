@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <math.h>
 using namespace std;
+/*
 // 사실상 4개의 꼭짓점에서 만드는 변들의 교차점이니 n개의 꼭짓점에서 4개의 변을 찾는 조합 nC4이다
 int main()
 {
@@ -16,4 +17,4 @@ int main()
 
 	system("pause");
 	return 0;
-}
+}*/

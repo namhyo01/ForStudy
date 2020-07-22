@@ -4,7 +4,7 @@
 #include <algorithm>
 using namespace std;
 
-
+/*
 
 int main() {
 	vector<int> arr(90, 0);
@@ -25,4 +25,4 @@ int main() {
 
 	system("pause");
 	return 0;
-}
+}*/

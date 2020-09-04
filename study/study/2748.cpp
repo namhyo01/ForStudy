@@ -13,8 +13,6 @@ long long Fibonacchi(int n) {
 	if (n == 0 || n == 1) {
 		return answer[n];
 	}
-	//if (answer[n] == 0)
-		//answer[n] = Fibonacchi(n - 1) + Fibonacchi(n - 2);
 	if (answer[n] != 0)
 		return answer[n];
 	

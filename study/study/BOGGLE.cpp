@@ -7,15 +7,15 @@
 #include <string.h>
 #pragma warning(disable:4996)
 using namespace std;
-
+/*
 char board[5][5]; //board 판
 int cache[5][5][10]; // 결과값을 저장. memset으로 -1로 초기화 1은 성공, 0은 실패
 string word;
-
+*/
 //알고스팟
-
+/*
 int hasWord(int x, int y, int wordIndex);
-
+*/
 /*int main()
 {
 	int C;
@@ -57,6 +57,7 @@ int hasWord(int x, int y, int wordIndex);
 	return 0;
 
 }*/
+/*
 int hasWord(int x, int y, int wordIndex) {
 	if ((x < 0) || (x > 4) || (y > 4) || (y < 0))
 		return 0;
@@ -78,3 +79,4 @@ int hasWord(int x, int y, int wordIndex) {
 	return ret = (hasWord(x - 1, y - 1, wordIndex) || hasWord(x - 1, y, wordIndex) || hasWord(x - 1, y + 1, wordIndex) || hasWord(x, y - 1, wordIndex) || hasWord(x, y + 1, wordIndex) || hasWord(x + 1, y - 1, wordIndex) || hasWord(x + 1, y, wordIndex) || hasWord(x + 1, y + 1, wordIndex));
 
 }
+*/

@@ -6,7 +6,7 @@
 #include <set>
 #pragma warning(disable:4996)
 using namespace std;
-
+/*
 long long answer[100] = { 0,1, };
 int N;
 long long Fibonacchi(int n) {
@@ -25,4 +25,4 @@ int main() {
 
 	system("pause");
 	return 0;
-}
+}*/

@@ -8,6 +8,7 @@
 #include <vector>
 #pragma warning(disable:4996)
 using namespace std;
+/*
 //주어진 칸을 덮을 수 있는 모든 경우의 수
 // 우리는 항상 주어진 칸의 맨 왼쪽중에서 맨 윗부터 채우면 된다.
 const int coverType[4][3][2] = { //(y,x)모양 // const로 상수화를 시켜 수정 불가능 생성
